@@ -256,6 +256,10 @@
     }];
 }
 
+- (NSURL *)getRequestURL {
+    return _request.URL;
+}
+
 #pragma mark - Stream Properties
 
 - (CFTypeRef)copyStreamPropertyForKey:(NSString *)key {

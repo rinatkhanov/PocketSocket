@@ -129,6 +129,11 @@ typedef NS_ENUM(NSInteger, PSWebSocketReadyState) {
  */
 - (void)closeWithCode:(NSInteger)code reason:(NSString *)reason;
 
+/**
+ *  Get the underlying url of the socket request.
+ */
+- (NSURL *)getRequestURL;
+
 #pragma mark - Stream Properties
 
 /**
